@@ -1,0 +1,178 @@
+/* Document container */
+
+body {
+    font-family: Work Sans;
+}
+
+.container-fluid {
+    /* padding: 0.5% 3%; */
+    text-align: center; 
+}
+
+h1 {
+    color: #222831;
+    font-family: Playfair Display;
+    font-size: 8rem;
+    font-weight: bolder;
+}
+
+hr {
+    background-color: white;
+    border: 10px dotted #DF7861;
+    border-bottom: none;
+    margin: 3% auto 0;
+    width: 5%;
+}
+
+h2 {
+    font-weight: bolder;
+}
+
+p {
+    font-family: Work Sans;
+    font-size: 2rem;
+    line-height: 2;
+}
+
+
+/* Navbar */
+
+.navbar {
+    background-color: #ECB390;
+    font-family: Ubuntu Mono, Arial;
+    padding-left: 0.5%;
+}
+
+.navbar a {
+    color: black;
+    font-weight: bold;
+}
+
+/* Introduction */
+
+#intro {
+    margin-top: 0.5%;
+    justify-content: center;
+}
+
+.title {
+    background-color: #00ADB5;
+}
+
+.heading {
+    padding: 5%;
+}
+
+.title-image {
+    color: #fff;
+}
+
+.subheading {
+    font-family: Work Sans;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.subheading p {
+    padding: 5%;
+    padding-bottom: 0;
+}
+
+span {
+    color: red;
+}
+
+.subheading-image {
+    margin-bottom: 10%;
+}
+
+/* Items */
+
+#items {
+    justify-content: center;
+}
+
+.labels-row {
+    text-align: left;
+}
+
+.detail-label {
+    font-size: 1.3rem;
+}
+
+#item-input, #price-input, #quantity-input {
+    width: 100%;
+}
+
+#add-new-button-div {
+    text-align: left;
+}
+
+.submit-button {
+    margin: 3% auto 20%;
+}
+
+.calc-button {
+    text-align: left;
+}
+
+/* Contact */
+
+#contact {
+    background-color: #5584AC;
+    color: white;
+    padding-top: 0.5%;
+}
+
+.contact-me {
+    /* background-color: #DF7861; */
+    font-family: Ubuntu Mono, Cons;
+    font-size: 0.8rem;
+    margin-top: 5%;
+    text-align: center;
+}
+
+
+.contact-me p {
+    font-size: 1.3rem;
+}
+
+.email {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 1.5%;
+}
+
+.email:hover {
+    color: #fff;
+    background-color: #22577E;
+}
+
+/* Media */
+
+#media {
+    background-color: #F5F5F5;
+    font-family: Ubuntu Mono;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.social-media {
+    padding-top: 1%;
+}
+
+.fab {color: #2E4C6D;
+    width: 2rem;
+}
+
+.copyright {
+    color: #22577E;
+    font-weight: 700;
+}
+
+.footer-copyright-text {
+    color: #222831;
+    font-family: Ubuntu Mono;
+    font-size: 0.9rem;
+}
