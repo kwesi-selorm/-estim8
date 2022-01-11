@@ -1,0 +1,38 @@
+.container-fluid {
+    background-color: #146356;
+    color: #FFF1BD;
+    padding: 20% 0;
+    text-align: center;
+}
+
+h1 {
+    font-family: Playfair Display;
+    font-size: 4rem;
+    font-weight: bolder;
+    justify-content: center;
+}
+
+p {
+    font-family: Work Sans;
+    font-size: 2rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.return-button {
+    font-family: Ubuntu Mono;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 3rem;
+    }
+    
+    p {
+        font-size: 1rem;
+}
+}
