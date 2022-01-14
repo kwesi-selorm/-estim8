@@ -6,15 +6,16 @@
 }
 
 h1 {
-    font-family: Playfair Display;
+    font-family: Source Sans Pro;
     font-size: 4rem;
     font-weight: bolder;
     justify-content: center;
 }
 
 p {
-    font-family: Work Sans;
+    font-family: Nunito;
     font-size: 2rem;
+    font-weight: bold;
 }
 
 a {
@@ -31,8 +32,8 @@ a {
     h1 {
         font-size: 3rem;
     }
-    
+
     p {
         font-size: 1rem;
-}
+    }
 }

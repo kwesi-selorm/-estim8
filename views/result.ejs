@@ -22,13 +22,13 @@
 
 <body>
     <div class="container-fluid">
-        <form action="/" method="get">
+        <!-- <form action="/" method="get"> -->
             <h1>Hi There!</h1>
-            <p>Your total shopping cost is <%= cost %>kr
-            </p>
-            <button type="submit" class="btn btn-success btn-lg return-button">Return to
-                Homepage</button>
-        </form>
+            <p>Your total shopping cost is <%= currency %> <%= cost %></p>
+
+            <a href="/"><button type="button" class="btn btn-success btn-lg return-button">Return to
+                Homepage</button></a>
+        <!-- </form> -->
     </div>
 </body>
 

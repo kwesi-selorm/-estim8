@@ -1,3 +1,4 @@
+//jshint esversion:6
 
 const express = require("express");
 const app = express();
@@ -15,31 +16,41 @@ app.use(express.static(__dirname + "/public"));
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "/views"));
 
-app.get("/", function (req, res) {
-    res.sendFile(__dirname + "/index.html");
-})
+//Global variables
+let currency = "";
+let totalPrice = 0;
+let amountToPay = [];
 
-//Global variable
-var totalPrice = 0;
+// Render home page
+app.get("/", function (req, res) {
+    res.render("index");
+});
+
 
 // POST method for the add-more button
 
-app.post('/items', function (req, res) {
-    var price = req.body.price;
-    var quantity = req.body.quantity;
-    var newItemPrice = price * quantity;
+app.post('/', function (req, res) {
+
+    currency = req.body.currency;
+    let price = req.body.price;
+    let quantity = req.body.quantity;
+    let newItemPrice = price * quantity;
+
+    amountToPay.push(newItemPrice);
 
     totalPrice += newItemPrice;
-    console.log(totalPrice);
-    // res.sendFile(__dirname + "/index.html");
+
+    // res.render("index", { currency, amountToPay });
 });
 
-app.post("/calculate", function (req, res) {
-    const cost = totalPrice;
-    res.render("result", { cost });
-})
+//Calculate total cost
+
+app.post("/result", function (req, res) {
+    let cost = totalPrice;
+    res.render("result", { currency: currency, cost: cost });
+});
 
 // Port
 app.listen(port, function () {
     console.log("Server listening at port " + port);
-})
+});

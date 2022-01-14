@@ -1,19 +1,25 @@
 /* Document container */
+/* html {
+
+} */
+
 
 body {
-    font-family: Work Sans;
+    font-family: Nunito;
+    text-align: center;
 }
 
-.container-fluid {
-    /* padding: 0.5% 3%; */
+/* .container-fluid {
     text-align: center; 
-}
+} */
 
 h1 {
     color: #222831;
-    font-family: Playfair Display;
+    font-family: Source Sans Pro;
     font-size: 8rem;
     font-weight: bolder;
+    text-align: center;
+    width: 100%;
 }
 
 hr {
@@ -29,23 +35,26 @@ h2 {
 }
 
 p {
-    font-family: Work Sans;
-    font-size: 2rem;
-    line-height: 2;
+    font-family: Nunito;
+    line-height: 1.5;
 }
-
 
 /* Navbar */
 
 .navbar {
     background-color: #ECB390;
     font-family: Ubuntu Mono, Arial;
+    font-size: 0.8rem;
     padding-left: 0.5%;
 }
 
 .navbar a {
     color: black;
     font-weight: bold;
+}
+
+.nav-link {
+    text-align: left;
 }
 
 /* Introduction */
@@ -57,6 +66,7 @@ p {
 
 .title {
     background-color: #00ADB5;
+    border-radius: 10px;
 }
 
 .heading {
@@ -68,13 +78,18 @@ p {
 }
 
 .subheading {
-    font-family: Work Sans;
-    font-size: 3rem;
+    font-family: Nunito;
+    font-size: 2rem;
     line-height: 1;
+    text-align: center;
+}
+
+.subheading-image {
+    padding: 2%;
 }
 
 .subheading p {
-    padding: 5%;
+    padding: 3%;
     padding-bottom: 0;
 }
 
@@ -88,19 +103,19 @@ span {
 
 /* Items */
 
-#items {
-    justify-content: center;
+
+.currency-div {
+    text-align: left;
+    margin-bottom: 25px;
 }
 
 .labels-row {
     text-align: left;
 }
 
-.detail-label {
-    font-size: 1.3rem;
-}
-
-#item-input, #price-input, #quantity-input {
+#item-input,
+#price-input,
+#quantity-input {
     width: 100%;
 }
 
@@ -125,13 +140,14 @@ span {
 }
 
 .contact-me {
-    /* background-color: #DF7861; */
-    font-family: Ubuntu Mono, Cons;
     font-size: 0.8rem;
-    margin-top: 5%;
+    margin: 3% auto 3%;
     text-align: center;
 }
 
+.contact-me h2 {
+    margin-bottom: 5%;
+}
 
 .contact-me p {
     font-size: 1.3rem;
@@ -152,7 +168,6 @@ span {
 
 #media {
     background-color: #F5F5F5;
-    font-family: Ubuntu Mono;
     margin-bottom: 0;
     text-align: center;
 }
@@ -161,7 +176,8 @@ span {
     padding-top: 1%;
 }
 
-.fab {color: #2E4C6D;
+.fab {
+    color: #2E4C6D;
     width: 2rem;
 }
 
@@ -174,4 +190,15 @@ span {
     color: #222831;
     font-family: Ubuntu Mono;
     font-size: 0.9rem;
+}
+
+@media (max-width: 400px) {
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
 }
