@@ -1,204 +1,170 @@
-/* Document container */
-/* html {
-
-} */
-
-
 body {
-    font-family: Nunito;
-    text-align: center;
+  font-family: Nunito;
+  text-align: center;
 }
-
-/* .container-fluid {
-    text-align: center; 
-} */
 
 h1 {
-    color: #222831;
-    font-family: Source Sans Pro;
-    font-size: 8rem;
-    font-weight: bolder;
-    text-align: center;
-    width: 100%;
-}
-
-hr {
-    background-color: white;
-    border: 10px dotted #DF7861;
-    border-bottom: none;
-    margin: 3% auto 0;
-    width: 5%;
+  color: #222831;
+  font-family: Source Sans Pro;
+  font-size: 8rem;
+  font-weight: bolder;
+  text-align: center;
+  width: 100%;
 }
 
 h2 {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 p {
-    font-family: Nunito;
-    line-height: 1.5;
-}
-
-/* Navbar */
-
-.navbar {
-    background-color: #ECB390;
-    font-family: Ubuntu Mono, Arial;
-    font-size: 0.8rem;
-    padding-left: 0.5%;
-}
-
-.navbar a {
-    color: black;
-    font-weight: bold;
-}
-
-.nav-link {
-    text-align: left;
+  font-family: Nunito;
+  line-height: 1;
 }
 
 /* Introduction */
 
 #intro {
-    margin-top: 0.5%;
-    justify-content: center;
+  margin-top: 0.5%;
+  justify-content: center;
 }
 
 .title {
-    background-color: #00ADB5;
-    border-radius: 10px;
+  background-color: #00adb5;
+  border-radius: 10px;
 }
 
 .heading {
-    padding: 5%;
+  padding: 2.5% 10%;
 }
 
 .title-image {
-    color: #fff;
+  color: #fff;
 }
 
 .subheading {
-    font-family: Nunito;
-    font-size: 2rem;
-    line-height: 1;
-    text-align: center;
-}
-
-.subheading-image {
-    padding: 2%;
+  font-family: Nunito;
+  font-size: 2rem;
+  line-height: 1;
+  text-align: center;
 }
 
 .subheading p {
-    padding: 3%;
-    padding-bottom: 0;
+  font-size: 1.5rem;
+  padding: 3%;
+  padding-bottom: 0;
 }
 
 span {
-    color: red;
+  color: red;
 }
 
 .subheading-image {
-    margin-bottom: 10%;
+  margin-bottom: 10%;
 }
 
 /* Items */
 
-
-.currency-div {
-    text-align: left;
-    margin-bottom: 25px;
+.items-form {
+  margin-top: 7%;
 }
 
-.labels-row {
-    text-align: left;
+.currency-div {
+  text-align: left;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.item-details {
+  margin: auto;
+  width: 80%;
 }
 
 #item-input,
 #price-input,
 #quantity-input {
-    width: 100%;
+  font-size: 1rem;
+  width: 100%;
 }
 
 #add-new-button-div {
-    text-align: left;
+  text-align: left;
 }
 
 .submit-button {
-    margin: 3% auto 20%;
+  margin: 3% auto 20%;
 }
 
 .calc-button {
-    text-align: left;
+  text-align: left;
 }
 
 /* Contact */
 
 #contact {
-    background-color: #5584AC;
-    color: white;
-    padding-top: 0.5%;
+  background-color: #5584ac;
+  color: white;
+  padding-top: 0.5%;
 }
 
 .contact-me {
-    font-size: 0.8rem;
-    margin: 3% auto 3%;
-    text-align: center;
+  font-size: 0.8rem;
+  margin: 3% auto 3%;
+  text-align: center;
 }
 
 .contact-me h2 {
-    margin-bottom: 5%;
+  margin-bottom: 5%;
 }
 
 .contact-me p {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
 .email {
-    font-size: 0.9rem;
-    font-weight: bold;
-    margin-bottom: 1.5%;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 1.5%;
 }
 
 .email:hover {
-    color: #fff;
-    background-color: #22577E;
+  color: #fff;
+  background-color: #22577e;
 }
 
 /* Media */
 
 #media {
-    background-color: #F5F5F5;
-    margin-bottom: 0;
-    text-align: center;
+  background-color: #f5f5f5;
+  margin-bottom: 0;
+  text-align: center;
 }
 
 .social-media {
-    padding-top: 1%;
+  padding-top: 1%;
 }
 
 .fab {
-    color: #2E4C6D;
-    width: 2rem;
+  color: #2e4c6d;
+  width: 2rem;
 }
 
 .copyright {
-    color: #22577E;
-    font-weight: 700;
+  color: #22577e;
+  font-weight: 700;
 }
 
 .footer-copyright-text {
-    color: #222831;
-    font-family: Ubuntu Mono;
-    font-size: 0.9rem;
+  color: #222831;
+  font-family: Ubuntu Mono;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 400px) {
+  h1 {
+    font-size: 5rem;
+  }
 
-    h1 {
-        font-size: 5rem;
-    }
-
-    p {
-        font-size: 1rem;
-    }
+  p {
+    font-size: 1rem;
+  }
 }
